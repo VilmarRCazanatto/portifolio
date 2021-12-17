@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: #DDD;
+}
+
+
+body {
+  background-color: rgb(61, 61, 61);
+}
+
+:root {
+  --app_width: 150vh;
+  --header_width: 10vh;
+  --drawerBtn_width: calc(var(--header_width) * .55);
+}
