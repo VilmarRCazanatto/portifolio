@@ -25,5 +25,6 @@ export const SocialLinkItemContainer = styled.div`
         height: 4vh;
         line-height: 4vh;
         width: calc(35vh - var(--height_width));
+        cursor: pointer;
     }
 `

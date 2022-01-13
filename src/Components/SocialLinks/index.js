@@ -5,13 +5,15 @@ import { SocialLinkContainer, SocialLinkItemContainer } from './style'
 
 class SocialLink extends React.Component {
     render() {
-        
+
         return (
             <SocialLinkContainer>
                 {this.props.accs.map((acc, i) => (
                     <SocialLinkItemContainer key={i}>
-                        <span>{acc.tag}</span>
-                        <acc.icon />
+                        <a href={acc.url} target="_blank">
+                            <span>{acc.tag}</span>
+                            <acc.icon title={acc.tag} />
+                        </a>
                     </SocialLinkItemContainer>
                 ))}
             </SocialLinkContainer>
